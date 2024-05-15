@@ -1,0 +1,6 @@
+Utils\Validaciones.class
+Enums\EstadoPedido.class
+Model\Plato.class
+Model\Producto.class
+Model\TipoPlato.class
+com\jesusesquivel\parcial4\Parcial4.class
