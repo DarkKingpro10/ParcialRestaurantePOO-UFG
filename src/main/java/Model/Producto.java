@@ -54,6 +54,10 @@ public class Producto {
         if (this == obj) {
             return true;
         }
+        
+        if(this.cantidadProducto == -1){//Validando que no se halla eliminado
+            return false;
+        }
         if (obj == null) {
             return false;
         }

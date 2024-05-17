@@ -193,4 +193,11 @@ public class Pedido {
             return new ResultadoOperacion(false, "Plato no se borro.");
         }
     }
+    
+    //Método para facturar (Cambiar el estado del pedido)
+    public ResultadoOperacion facturar(){
+        this.setEstadoPedido(EstadoPedido.PAGADO);
+        
+        return new ResultadoOperacion(true, "Se facturo el pedido");
+    }
 }
