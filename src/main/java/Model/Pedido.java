@@ -2,8 +2,8 @@ package Model;
 
 import Enums.EstadoPedido;
 import Utils.ResultadoOperacion;
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -16,7 +16,7 @@ public class Pedido {
     //Atributos de clase
     private int idPedido;
     private String cliente;
-    private Date fechaPedido;
+    private LocalDate fechaPedido;
     private double total;
     private int tiempoEntregaEstimado; //Lo puse como entero pues solo tomare los minuto
     private ArrayList<HashMap<Plato, Integer>> platos;

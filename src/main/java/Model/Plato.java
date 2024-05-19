@@ -22,7 +22,7 @@ public class Plato {
     private boolean disponibilidad;
 
     //Constructor parametrizado
-    public Plato(int id, String nombrePlato, String descripcion, double precio, int tiempoEstimadoPreparacionMn, Producto producto, int cantidadIngrediente, TipoPlato tipoPlato, boolean disponibilidad) {
+    public Plato(int id, String nombrePlato, String descripcion, double precio, int tiempoEstimadoPreparacionMn, ArrayList<HashMap<Producto, Integer>> ingredientes, TipoPlato tipoPlato, boolean disponibilidad) {
         this.idPlato = id;
         this.nombrePlato = nombrePlato;
         this.descripcion = descripcion;
@@ -30,9 +30,7 @@ public class Plato {
         this.tiempoEstimadoPreparacionMn = tiempoEstimadoPreparacionMn;
 
         //Inicializando el plato
-        HashMap<Producto, Integer> ingrediente = new HashMap<>();
-        ingrediente.put(producto, cantidadIngrediente);
-        ingredientes.add(ingrediente);
+        this.ingredientes = ingredientes;
         this.tipoPlato = tipoPlato;
         this.disponibilidad = disponibilidad;
     }
