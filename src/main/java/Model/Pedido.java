@@ -23,7 +23,7 @@ public class Pedido {
     private EstadoPedido estadoPedido;
 
     //Constructor parametrizado
-    public Pedido(int idPedido, String cliente, Date fechaPedido, double total, int tiempoEntregaEstimado, ArrayList<HashMap<Plato, Integer>> platos, EstadoPedido estadoPedido) {
+    public Pedido(int idPedido, String cliente, LocalDate fechaPedido, double total, int tiempoEntregaEstimado, ArrayList<HashMap<Plato, Integer>> platos, EstadoPedido estadoPedido) {
         this.idPedido = idPedido;
         this.cliente = cliente;
         this.fechaPedido = fechaPedido;
@@ -55,11 +55,11 @@ public class Pedido {
         this.cliente = cliente;
     }
 
-    public Date getFechaPedido() {
+    public LocalDate getFechaPedido() {
         return fechaPedido;
     }
 
-    public void setFechaPedido(Date fechaPedido) {
+    public void setFechaPedido(LocalDate fechaPedido) {
         this.fechaPedido = fechaPedido;
     }
 
